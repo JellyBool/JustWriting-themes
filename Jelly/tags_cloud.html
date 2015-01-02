@@ -8,35 +8,40 @@
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        
-            
-<article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
-    <header class="entry-header">
-        <h1 class="entry-title">标签云</h1>
-        
-        <span class="entry-format-badge genericon genericon-standard"><span class="screen-reader-text"></span></span>
-            </header><!-- .entry-header -->
 
-    <div class="entry-content">
-       {% for tag in all_tags %}
+            <article id="post-6"
+                     class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
+                <header class="entry-header">
+                    <h1 class="entry-title">标签云</h1>
+
+                    <span class="entry-format-badge genericon genericon-standard"><span
+                            class="screen-reader-text"></span></span>
+                </header>
+                <!-- .entry-header -->
+
+                <div class="entry-content">
+                    {% for tag in all_tags %}
        <span class="tag">
         <a href="/tags/{{ tag }}">{{ tag }} </a>
         </span>
-        {% endfor %}
-            </div><!-- .entry-content -->
+                    {% endfor %}
+                </div>
+                <!-- .entry-content -->
 
- <!-- .entry-meta -->
-</article><!-- #post-## -->
-
-
-        
-        </main><!-- #main -->
-    </div><!-- #primary -->
+                <!-- .entry-meta -->
+            </article>
+            <!-- #post-## -->
 
 
+        </main>
+        <!-- #main -->
     </div>
+    <!-- #primary -->
+
+
+</div>
 {% else %}
-    {% include 'include/posts_list.html' %}
+{% include 'include/posts_list.html' %}
 {% endif %}
 {% endblock %}
 

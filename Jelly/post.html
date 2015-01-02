@@ -4,75 +4,79 @@
 {% block content %}
 
 
-
 <div id="content" class="site-content">
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        
-            
-<article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
-    <header class="entry-header">
-        <h1 class="entry-title">{{ post.title }}</h1>
-        
-                    <span class="entry-format-badge genericon genericon-standard"><span class="screen-reader-text"></span></span>
-            </header><!-- .entry-header -->
 
-    <div class="entry-content">
-       {{ post.html|raw }}
-            </div><!-- .entry-content -->
+            <article id="post-6"
+                     class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
+                <header class="entry-header">
+                    <h1 class="entry-title">{{ post.title }}</h1>
 
-    <footer class="entry-meta">
+                    <span class="entry-format-badge genericon genericon-standard"><span
+                            class="screen-reader-text"></span></span>
+                </header>
+                <!-- .entry-header -->
 
-        <ul class="clear">
-            
-    <li class="date-meta">
-        <div class="genericon genericon-month"></div>
-        
-        <a  rel="bookmark" >{{ post.date | date('Y-m-d') }}</a>
-    </li>
- {% if post.tags %}
-    {% for tag in post.tags %}
-        <li class="comment-meta">
-            <div class="genericon genericon-tag"></div>
-            
-            <a href="/tags/{{ tag }}" >{{ tag }}</a>      </li>
-             {% endfor %}
-             {% endif %}
-            
-        </ul>
+                <div class="entry-content">
+                    {{ post.html|raw }}
+                </div>
+                <!-- .entry-content -->
 
-    </footer><!-- .entry-meta -->
-</article><!-- #post-## -->
+                <footer class="entry-meta">
 
-                      
-                      
-                      
-            
-                     
-     
-        <nav role="navigation" id="nav-below" class="post-navigation">
-        <h1 class="screen-reader-text"></h1>
+                    <ul class="clear">
 
-    {% if prev_post %}
-        <div class="nav-previous"><a href="{{prev_post.link}}" rel="prev"><span class="genericon genericon-leftarrow"></span> {{prev_post.title}}</a></div>     
-    {% endif %}
-    {% if next_post %}
-    <div class="nav-next"><a href="{{next_post.link}}" rel="next">{{next_post.title}} <span class="genericon genericon-rightarrow"></span></a></div> 
-     {% endif %}
-    </nav><!-- #nav-below -->
-        <blockquote class="quote">
-        </blockquote>
+                        <li class="date-meta">
+                            <div class="genericon genericon-month"></div>
 
-   <!-- #comments -->
-{% include 'include/comments.html' %}
-    
-        </main><!-- #main -->
-    </div><!-- #primary -->
+                            <a rel="bookmark">{{ post.date | date('Y-m-d') }}</a>
+                        </li>
+                        {% if post.tags %}
+                        {% for tag in post.tags %}
+                        <li class="comment-meta">
+                            <div class="genericon genericon-tag"></div>
+
+                            <a href="/tags/{{ tag }}">{{ tag }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+
+                    </ul>
+
+                </footer>
+                <!-- .entry-meta -->
+            </article>
+            <!-- #post-## -->
 
 
+            <nav role="navigation" id="nav-below" class="post-navigation">
+                <h1 class="screen-reader-text"></h1>
+
+                {% if prev_post %}
+                <div class="nav-previous"><a href="{{prev_post.link}}" rel="prev"><span
+                        class="genericon genericon-leftarrow"></span> {{prev_post.title}}</a></div>
+                {% endif %}
+                {% if next_post %}
+                <div class="nav-next"><a href="{{next_post.link}}" rel="next">{{next_post.title}} <span
+                        class="genericon genericon-rightarrow"></span></a></div>
+                {% endif %}
+            </nav>
+            <!-- #nav-below -->
+            <blockquote class="quote">
+            </blockquote>
+
+            <!-- #comments -->
+            {% include 'include/comments.html' %}
+
+        </main>
+        <!-- #main -->
     </div>
+    <!-- #primary -->
+
+
+</div>
 
 
 {% endblock %}

@@ -1,67 +1,72 @@
 <div id="content" class="site-content">
-<style>
-.content-area {
-margin-bottom: 10px;
-}
-</style>
+    <style>
+        .content-area {
+            margin-bottom: 10px;
+        }
+    </style>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        
-                        
-  {% for post in posts %}              
-<article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
-    <header class="entry-header">
-        <h1 class="entry-title"><a href="{{post.link}}" rel="bookmark">{{ post.title }}</a></h1>
-        {% if post.feature  %} 
-        <div class="entry-thumbnail">
-                    <a href="{{post.link}}" title="{{ post.title }}" rel="12">
-                        <img  src="{{post.feature}}" class="attachment-featured-image wp-post-image" alt="www.jellybool.com"></a>
+
+            {% for post in posts %}
+            <article id="post-6"
+                     class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
+                <header class="entry-header">
+                    <h1 class="entry-title"><a href="{{post.link}}" rel="bookmark">{{ post.title }}</a></h1>
+                    {% if post.feature %}
+                    <div class="entry-thumbnail">
+                        <a href="{{post.link}}" title="{{ post.title }}" rel="12">
+                            <img src="{{post.feature}}" class="attachment-featured-image wp-post-image"
+                                 alt="www.jellybool.com"></a>
+                    </div>
+                    {% endif %}
+                    <span class="entry-format-badge genericon genericon-standard {% if post.feature  %} genericon-image {% endif %} "><span
+                            class="screen-reader-text">Standard</span></span>
+                </header>
+                <!-- .entry-header -->
+
+                <div class="entry-content">
+                    <p>{{ post.intro|raw }}</p>
                 </div>
-        {% endif %}  
-                    <span class="entry-format-badge genericon genericon-standard {% if post.feature  %} genericon-image {% endif %} "><span class="screen-reader-text">Standard</span></span>
-            </header><!-- .entry-header -->
+                <!-- .entry-content -->
 
-        <div class="entry-content">
-        <p>{{ post.intro|raw }}</p>
-            </div><!-- .entry-content -->
-    
-        <footer class="entry-meta">
+                <footer class="entry-meta">
 
-        <ul class="clear">
-            
-    <li class="date-meta">
-        <div class="genericon genericon-month"></div>
-       
-        <a href="#" rel="bookmark" title="下午7:02">{{ post.date | date('Y-m-d') }}</a>
-    </li>
-    {% if post.tags %} 
-   {% for tag in post.tags %}
-<li class="comment-meta">
-            <div class="genericon genericon-tag"></div>
-            
-            <a href="/tags/{{ tag }}" >{{ tag }}</a> 
-            
-</li>
-  {% endfor %}  
-   {% endif %}      
+                    <ul class="clear">
 
-            </ul>
+                        <li class="date-meta">
+                            <div class="genericon genericon-month"></div>
 
-    </footer><!-- .entry-meta -->
-    </article>
-{% endfor %}
-    <!-- #post-## -->
-    </main><!-- #main -->
+                            <a href="#" rel="bookmark" title="下午7:02">{{ post.date | date('Y-m-d') }}</a>
+                        </li>
+                        {% if post.tags %}
+                        {% for tag in post.tags %}
+                        <li class="comment-meta">
+                            <div class="genericon genericon-tag"></div>
+
+                            <a href="/tags/{{ tag }}">{{ tag }}</a>
+
+                        </li>
+                        {% endfor %}
+                        {% endif %}
+
+                    </ul>
+
+                </footer>
+                <!-- .entry-meta -->
+            </article>
+            {% endfor %}
+            <!-- #post-## -->
+        </main>
+        <!-- #main -->
 
 
-             
-              <!-- jellybool_ads468 -->
-          
-              
- 
-    </div><!-- #primary -->
+        <!-- jellybool_ads468 -->
+
+
+    </div>
+    <!-- #primary -->
 
 </div>
-    </div>
+</div>
  

@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}{{ config.title }} {% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ config.title }} {% endblock %}</title>
 
-<link rel='stylesheet' id='genericons-css'  href='/templates/writri/css/genericons.css' type='text/css' media='all' />
-<link rel='stylesheet' id='writr-style-css'  href='/templates/writri/css/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='writr-style-css'  href='/templates/writri/css/zoom.css' type='text/css' media='all' />
-<link rel='stylesheet' id='writr-style-css'  href='/templates/writri/css/github.css' type='text/css' media='all' />
-<meta property="wb:webmaster" content="31f590876b9c214c" />
-<meta name="keywords" content="JellyBool,BoomingJelly,觉累不爱,累觉不爱,前端,前端工程师,PHP,PHP工程师,Blog,博客,个人博客">
-    <meta name="description" content="JellyBool是一个身材有高度,肩膀有宽度,胸肌有厚度,思想有深度的国家免检五A级优质伪前端IT男屌丝">
- 
- <script type="text/javascript" src="/templates/writri/js/jquery.js"></script>    
-   
-    <script type="text/javascript" src="/templates/writri/js/underscore.js"></script>
-    <script type="text/javascript" src="/templates/writri/js/jquery-migrate.min.js"></script>
-     <script type="text/javascript" src="/templates/writri/js/navigation.js"></script>
-     <script type="text/javascript" src="/templates/writri/js/quote/quote.js"></script>
-    <script src="/templates/writri/js/sidebar.js" type="text/javascript"></script>
-     <script type="text/javascript" src="/templates/writri/js/link.js"></script>
-     <script type="text/javascript" src="/templates/writri/js/jelly.js"></script>
-     <script src="/templates/writri/js/rainbow.min.js" type="text/javascript"></script> 
-<script src="/templates/writri/js/generic.js" type="text/javascript"></script>
-<script src="/templates/writri/js/php.js" type="text/javascript"></script>
+    <link rel='stylesheet' id='genericons-css' href='/templates/jelly/css/genericons.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='jelly-style-css' href='/templates/jelly/css/style.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='jelly-style-css' href='/templates/jelly/css/github.css' type='text/css' media='all'/>
+    <script type="text/javascript" src="/templates/jelly/js/jquery.js"></script>
+
+    <script type="text/javascript" src="/templates/jelly/js/underscore.js"></script>
+    <script type="text/javascript" src="/templates/jelly/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/templates/jelly/js/navigation.js"></script>
+    <script type="text/javascript" src="/templates/jelly/js/quote/quote.js"></script>
+    <script src="/templates/jelly/js/sidebar.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/templates/jelly/js/link.js"></script>
+    <script type="text/javascript" src="/templates/jelly/js/jelly.js"></script>
+    <script src="/templates/jelly/js/rainbow.min.js" type="text/javascript"></script>
+    <script src="/templates/jelly/js/generic.js" type="text/javascript"></script>
+    <script src="/templates/jelly/js/php.js" type="text/javascript"></script>
 
 </head>
 
@@ -32,74 +27,87 @@
 <a href="javascript:;" title="回到顶部" class="back-to-top"></a>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-50339427-2', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-50339427-2', 'auto');
+    ga('send', 'pageview');
 
 </script>
-
 
 
 <script type="text/javascript">
-  
-  $(document).ready(function(){ 
-    $(window).scroll(function(){ 
 
-          var offset = $(window).scrollTop();
+    $(document).ready(function () {
+        $(window).scroll(function () {
 
-          if (offset > 600) {
-            $('.back-to-top').addClass('show');
-          } else {
-            $('.back-to-top').removeClass('show');
-          }
-          $('.back-to-top').on('click', function(){
-          $('body').scrollTop(0, {duration: 1200});
-          });
-     });
-     
-  }); 
+            var offset = $(window).scrollTop();
+
+            if (offset > 600) {
+                $('.back-to-top').addClass('show');
+            } else {
+                $('.back-to-top').removeClass('show');
+            }
+            $('.back-to-top').on('click', function () {
+                $('body').scrollTop(0, {duration: 1200});
+            });
+        });
+
+    });
 
 </script>
 <div id="page" class="hfeed site">
-<div id="sidebar" class="sidebar-area">
-<a id="sidebar-toggle" href="#" title="Sidebar"><span class="genericon genericon-close"></span><span class="screen-reader-text">Sidebar</span></a>
-    <header id="masthead" class="site-header" role="banner" style="display: block;">
-                    <a class="site-logo" href="/"  rel="home">
-               
+    <div id="sidebar" class="sidebar-area">
+        <a id="sidebar-toggle" href="#" title="Sidebar"><span class="genericon genericon-close"></span><span
+                class="screen-reader-text">Sidebar</span></a>
+        <header id="masthead" class="site-header" role="banner" style="display: block;">
+            <a class="site-logo" href="/" rel="home">
+
                 <img src="{{ config.avatar }}" width="120" alt="" class="no-grav header-image">
-                
+
             </a>
-                <div class="site-branding">
-             {% if config.author %}       
-            <h1 class="site-title"><a href="/"  rel="home">{{ config.author }}</a></h1>
-            {% endif %}
-            {% if config.intro %}
-            <h2 class="site-description">{{ config.intro }}</h2>
-            {% endif %}
+
+            <div class="site-branding">
+                {% if config.author %}
+                <h1 class="site-title"><a href="/" rel="home">{{ config.author }}</a></h1>
+                {% endif %}
+                {% if config.intro %}
+                <h2 class="site-description">{{ config.intro }}</h2>
+                {% endif %}
+            </div>
+
+        </header>
+
+        <div id="secondary" class="widget-area" role="complementary">
+            <aside id="categories-2" class="widget widget_categories">
+
+            </aside>
         </div>
+        <!-- #secondary -->
+        <footer id="colophon" class="site-footer" role="contentinfo" style="visibility: visible; opacity: 1;">
 
-            </header>
-
-            <div id="secondary" class="widget-area" role="complementary">
-                        <aside id="categories-2" class="widget widget_categories">
-
-</aside>                    </div><!-- #secondary -->
-    <footer id="colophon" class="site-footer" role="contentinfo" style="visibility: visible; opacity: 1;">
-        
-        <div class="site-info">
-                        <div>Powered By <a target='_blank' href="http://github.com/hjue/JustWriting">JustWriting</a> </div>
-            <div>Theme: <a href="http://automattic.com/" target="_blank">Jelly</a> by <a href="http://www.jellybool.com/" >JellyBool</a>.</div>
-        </div><!-- .site-info -->
-    </footer></div>
-        {% block content %}
-        {% endblock %}
-   <!-- #colophon -->
-</div> 
- 
+            <div class="site-info">
+                <div>Powered By <a target='_blank' href="http://github.com/hjue/JustWriting">JustWriting</a></div>
+                <div>Theme: <a href="http://www.jellybool.com" target="_blank">Jelly</a> by <a
+                        href="http://www.jellybool.com/">JellyBool</a>.
+                </div>
+            </div>
+            <!-- .site-info -->
+        </footer>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <!-- #colophon -->
+</div>
 
 
 </body>
