@@ -22,11 +22,16 @@ Change your blog `settings.php`
 >Example:`$blog_config['template'] = 'Jelly';` if you like `Jelly` theme
 
 ### Jelly-Theme
+
+>Clean  Focus  Responsive
+
 [Demo here](http://www.jellybool.com/)---My blog
 
 ![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envr01sjtlj225c1eongi.jpg)
 
 ### Bmore-Theme
+
+>Clean  Beautiful  Responsive
 
 **Post-list:**
 
