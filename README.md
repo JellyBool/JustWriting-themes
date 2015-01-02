@@ -13,11 +13,13 @@ Themes For Justwriting Blog Engine
 
 Select theme you like and Copy it to your blog path `/templates/`
 
-**Step Three:**
+**3.Step Three:**
 
 Change your blog `settings.php` 
 
-`$blog_config['template'] = 'Jelly';`
+`$blog_config['template'] = 'Theme name you like';`
+
+>Example:`$blog_config['template'] = 'Jelly';` if you like `Jelly` theme
 
 ### Jelly-Theme
 [Demo here](http://www.jellybool.com/)---My blog
