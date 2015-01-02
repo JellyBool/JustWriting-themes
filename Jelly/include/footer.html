@@ -1,18 +1,7 @@
 
 <footer id="footer" class="inner">
-	<script type="text/javascript">
-	$(document).ready(function(){
-		var myDate = new Date();
-		var myYear	= myDate.getFullYear();
-		//document.getElementById('my_own_copyright').innerHTML="Copyright © "+myYear;
-		$("#my_own_copyright").html("Copyright © "+myYear);
- 
-  });
-
-		
 
 
-	</script>
 	<p><span id="my_own_copyright"></span>
   	{% if config.author %}
 	 {{ config.author }} 

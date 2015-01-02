@@ -52,7 +52,7 @@
 		} );
 
 		if ( $( window ).width() < 768 ) {
-			thumbnail.css( 'width', '100%' ).css( 'width', '+=80px' );
+			thumbnail.css( 'width', '100%' );
 		} else {
 			thumbnail.removeAttr( 'style' );
 		}
@@ -65,7 +65,7 @@
 	$( document ).on( 'post-load', function() {
 		var thumbnail = $( '.entry-thumbnail' );
 		if ( $( window ).width() < 768 ) {
-			thumbnail.css( 'width', '100%' ).css( 'width', '+=80px' );
+			thumbnail.css( 'width', '100%' );
 		} else {
 			thumbnail.removeAttr( 'style' );
 		}

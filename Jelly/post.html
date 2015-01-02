@@ -2,6 +2,9 @@
 {% block title %}{{ post.title }} - {{ configs.title }} {% endblock %}
 
 {% block content %}
+
+
+
 <div id="content" class="site-content">
 
     <div id="primary" class="content-area">
@@ -37,6 +40,7 @@
             <a href="/tags/{{ tag }}" >{{ tag }}</a>      </li>
              {% endfor %}
              {% endif %}
+            
         </ul>
 
     </footer><!-- .entry-meta -->
@@ -58,15 +62,19 @@
     <div class="nav-next"><a href="{{next_post.link}}" rel="next">{{next_post.title}} <span class="genericon genericon-rightarrow"></span></a></div> 
      {% endif %}
     </nav><!-- #nav-below -->
-    
+        <blockquote class="quote">
+        </blockquote>
 
    <!-- #comments -->
 {% include 'include/comments.html' %}
-        
+    
         </main><!-- #main -->
     </div><!-- #primary -->
 
 
     </div>
+
+
 {% endblock %}
+
 

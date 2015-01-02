@@ -1,0 +1,57 @@
+<div id="content" class="site-content">
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+        
+                        
+  {% for pocket in pockets %}              
+<article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-uncategorized">
+    <header class="entry-header">
+      <h1 class="entry-title"><a href="{{ pocket.resolved_url }}" rel="bookmark" target="_blank">
+      {{ pocket.resolve_title }}</a></h1>
+        {% if pocket.feature_img  %} 
+        <div class="entry-thumbnail">
+                    <a href="{{ pocket.resolved_url }}" title="{{ pocket.resolve_title }}" rel="12">
+                        <img  src="{{pocket.feature_img}}" class="attachment-featured-image wp-post-image" alt="www.jellybool.com"></a>
+                </div>
+        {% endif %}  
+                    <span class="entry-format-badge genericon genericon-standard 
+                    {% if pocket.feature_img  %} genericon-image {% endif %} "><span class="screen-reader-text">Standard</span></span>
+            </header><!-- .entry-header -->
+
+        <div class="entry-content">
+        <p>{{ pocket.excerpt }}</p>
+            </div><!-- .entry-content -->
+    
+        <footer class="entry-meta">
+
+        <ul class="clear">
+            
+    <li class="date-meta">
+        <div class="genericon genericon-month"></div>
+       
+        <a href="#" rel="bookmark" title="下午7:02">{{ pocket.pocket_time | date('Y-m-d') }}</a>
+    </li>
+    {% if pocket.pocket_tags %} 
+   {% for pocket_tag in pocket.pocket_tags %}
+<li class="comment-meta">
+            <div class="genericon genericon-tag"></div>
+            
+            <a href="#" >{{ pocket_tag }}</a> 
+            
+</li>
+  {% endfor %}  
+   {% endif %}      
+
+            </ul>
+
+    </footer><!-- .entry-meta -->
+    </article>
+{% endfor %}
+    <!-- #post-## -->
+    </main><!-- #main -->
+    </div><!-- #primary -->
+
+</div>
+    </div>
