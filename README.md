@@ -1,9 +1,25 @@
 JustWriting-themes
 ==================
 
-Themes for justwriting blog engine
+Themes For Justwriting Blog Engine
 
-### Jelly-theme
+### Usage
+
+**1.Step one:**
+
+`$ git clone https://github.com/JellyBool/JustWriting-themes.git`
+
+**2.Step two:**
+
+Select theme you like and Copy it to your blog path `/templates/`
+
+**Step Three:**
+
+Change your blog `settings.php` 
+
+`$blog_config['template'] = 'Jelly';`
+
+### Jelly-Theme
 [Demo here](http://www.jellybool.com/)---My blog
 
 ![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envr01sjtlj225c1eongi.jpg)
