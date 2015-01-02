@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}{{ config.title }} - {{ lang('tags') }}{% endblock %}
+
+{% block content %}
+{%if  all_tags %}
+<div id="page" class="container">
+<div class="main group">
+<section class="content">
+    
+    <div class="pad group">         
+    
+        
+        <article class="post-543 post type-post status-publish format-image has-post-thumbnail hentry category-default tag-php tag-23">
+
+
+
+        <h2 class="title">{{ lang('tags') }}：</h2>
+        <br>
+      {% for tag in all_tags %}
+        <div class="tag">
+		<a href="/tags/{{ tag }}">{{ tag }} </a>
+        </div>
+        {% endfor %}
+        </article>
+    </div>
+    </section>
+    </div>
+    {% include 'include/footer.html' %}
+</div>
+{% else %}
+    {% include 'include/posts_list.html' %}
+{% endif %}
+{% endblock %}
+
+

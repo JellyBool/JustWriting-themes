@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hub.moe,me.hub.moe,blog,Hooli,MinonHeart"/>
+    <meta name="description" content="Just a Blog."/>
+
+    <title>{% block title %}{{ config.title }} {% endblock %}</title>
+  
+    <link rel='stylesheet' id='style-css' href='/templates/bmore/css/style.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='responsive-css' href='/templates/bmore/css/responsive.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='custom-css' href='/templates/bmore/css/custom.css?ver=4.1' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='font-awesome-css' href='/templates/bmore/css/font-awesome.css'
+          type='text/css' media='all'/>
+<script type='text/javascript' src='/templates/bmore/js/jquery.js'></script>
+    <script type='text/javascript' src='/templates/bmore/js/jquery.flexslider.min.js'></script>
+
+    <!--[if lt IE 9]>
+    <script src="/templates/bmore/css/js/ie/html5.js"></script>
+    <script src="/templates/bmore/css/js/ie/selectivizr.js"></script>
+    <![endif]-->
+    <style type="text/css">.recentcomments a {
+        display: inline !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }</style>
+</head>
+
+<body class="home blog col-1c full-width light-header-text chrome">
+
+<div id="wrapper">
+
+    <header id="header">
+
+
+        <div class="container">
+            <div class="pad group">
+                <h1 class="site-title">
+                <a href="/" rel="home"><img src="{{ config.avatar }}" alt="2B 铅笔"></a></h1>
+                                {% if config.intro %}
+                                <p class="site-description">{{ config.intro }}</p>
+                                {% endif %}
+  
+            </div>
+        </div>
+        <!--/.container-->
+
+    </header>
+    <!--/#header-->
+    {% block content %}
+    {% endblock %}
+
+
+
+
+<!--/#wrapper-->
+
+
+<script type='text/javascript' src='/templates/bmore/js/js.js?ver=4.1'></script>
+<!--[if lt IE 9]>
+<script src="/templates/bmore/css/js/ie/respond.js"></script>
+<![endif]-->
+</body>
+</html>

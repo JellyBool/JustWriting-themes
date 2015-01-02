@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title }} - {{ config.title }} {% endblock %}
+
+{% block content %}
+
+<div id="page" class="container">
+		<div class="main group">
+<section class="content">
+	
+	<div class="pad group">			
+	
+		
+		<article class="post-543 post type-post status-publish format-image has-post-thumbnail hentry category-default tag-php tag-23">
+		
+			<h1 class="post-title pad">{{ post.title }}</h1>
+			
+			<ul class="post-meta pad group">
+				<li><a href="https://me.hub.moe/archives/category/default" rel="category tag">默认</a></li>
+				<li><i class="fa fa-clock-o"></i>{{ post.date | date('Y-m-d') }}</li>
+				<li><a href="#comments"><i class="fa fa-comment"></i>24</a></li>			</ul>
+			
+			<div class="post-inner">
+				
+				
+
+
+
+	
+
+
+
+
+				
+				<div class="post-deco">
+					<div class="hex hex-small">
+						<div class="hex-inner"><i class="fa"></i></div>
+						<a href="https://me.hub.moe/archives/type/image"></a>						<div class="corner-1"></div>
+						<div class="corner-2"></div>
+					</div>
+				</div><!--/.post-deco-->
+				
+				<div class="post-content pad">
+				
+					<div class="entry">
+						{{ post.html|raw }}
+											</div><!--/.entry-->
+					
+					<p class="post-tags"><span>标签：</span> 
+
+					    {% if post.tags %}
+                        
+                            
+                            {% for tag in post.tags %}
+                                <a href="/tags/{{ tag }}">{{ tag }}</a>
+                            {% endfor %}
+                        
+						</br>
+                    {% endif %}
+				
+					</p>					
+				</div><!--/.post-content-->
+								
+			</div><!--/.post-inner-->
+			
+		</article><!--/.post-->			
+			
+		
+		
+	
+
+	</div><!--/.pad-->
+	 {% include 'include/comments.html' %}
+</section><!--/.content-->
+
+
+		</div><!--/.main-->
+	</div>
+	{% include 'include/footer.html' %}
+	{% endblock %}

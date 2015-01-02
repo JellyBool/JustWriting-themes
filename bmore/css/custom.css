@@ -1,0 +1,252 @@
+/* 
+Add your custom styles in this file instead of style.css so it 
+is easier to update the theme. Simply copy an existing style 
+from style.css to this file, and modify it to your liking. 
+
+When you update your theme, backup this file and re-add it after.
+*/
+
+/* Global */
+.mystyle {}
+#header .site-title { font-family: "Microsoft Jhenghei"; }
+#header .social-links { display: none; }
+#footer-bottom #back-to-top:before { display: none; }
+#footer-bottom #back-to-top:after { display: none; }
+#footer-bottom #back-to-top { border-radius: 0 0 3px 3px; margin-top: -83px;}
+#footer-widgets .widget>h3 { text-transform: capitalize; font-family: "Microsoft Jhenghei"; }
+
+#header {
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://me.hub.moe/static/header.jpg);
+    background-image:    -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://me.hub.moe/static/header.jpg);
+    background-image:     -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://me.hub.moe/static/header.jpg);
+    background-image:      -o-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://me.hub.moe/static/header.jpg);
+    background-image:         linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://me.hub.moe/static/header.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#footer { background: #222 url(/static/footer.png) repeat; }
+.entry blockquote { font-style: normal; }
+.entry code { vertical-align: 2px; padding: 2px 3px; border-radius: 2px; }
+.entry pre { white-space: pre; word-wrap: normal; }
+.entry code, .entry pre { font-size: 12px; font-family: Monaco, Consolas, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace; }
+.post-title { font-weight: normal; }
+.site-title { float: none; }
+.site-title a img {
+    max-height: none!important;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: rgba(255, 255, 255, 1) 0 0 0 5px, rgba(0, 0, 0, 1) 0 0 15px 5px;
+    -webkit-transition: -webkit-transform 600ms;
+    -moz-transition: -moz-transform 600ms;
+    transition: transform 600ms;
+}
+.site-title a img:hover {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.site-description {
+    float: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+#commentform {
+    border-bottom: none;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+hr, .hr { border-bottom: none; }
+#header .pad { padding-top: 65px; padding-bottom: 50px; } /* 使用 header.jpg 后新增的语句 */
+#footer .container { max-width: 960px; }
+#nav-footer .nav>li>a { font-size: 16px; font-family: "Microsoft Jhenghei"; }
+.page-title { border-bottom: none; }
+.page .container{ max-width: 780px; }
+
+.custom-links a {
+    display: inline-block;
+    padding: 2px 14px;
+    margin: 3px;
+    color: #e8554e;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    text-shadow: 0em 0em 0.01em rgba(232,85,78,0.6);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+.custom-links a:hover {
+    color: #fff;
+    background-color: #e8554e;
+    border: 1px solid #e8554e;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+    text-shadow: none;
+}
+.custom-links { list-style: none; }
+.custom-links ul { margin: 0; }
+.custom-links h3 { display: none; margin: 0; }
+.custom-links  { float: left; margin-bottom: 1em; }
+
+/* 复写 style.css 中的 @font-face */
+@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-light-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-light-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-light-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-light-webfont.svg#ubuntulight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-lightitalic-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-lightitalic-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-lightitalic-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-lightitalic-webfont.svg#ubuntulight_italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-regular-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-regular-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-regular-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-regular-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-italic-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-italic-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-italic-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-italic-webfont.svg#ubuntuitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-medium-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-medium-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-medium-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-medium-webfont.svg#ubuntumedium') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-mediumitalic-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-mediumitalic-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-mediumitalic-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-mediumitalic-webfont.svg#ubuntumedium_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+/*@font-face {
+    font-family: 'Lato';
+    src: url('//dn-font-family.qbox.me/ubuntu-bold-webfont.eot');
+    src: url('//dn-font-family.qbox.me/ubuntu-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//dn-font-family.qbox.me/ubuntu-bold-webfont.woff') format('woff'),
+         url('//dn-font-family.qbox.me/ubuntu-bold-webfont.ttf') format('truetype'),
+         url('//dn-font-family.qbox.me/ubuntu-bold-webfont.svg#ubuntubold') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}*/ /* 这么粗的字体用不到 */
+
+/* Begin Dynamic CSS */
+body { font-family: "Lato", Arial, "微软雅黑", sans-serif; }
+.boxed #wrapper, .container { max-width: 860px; }
+
+::selection { background-color: #e8554e; }
+::-moz-selection { background-color: #e8554e; }
+
+a,
+.themeform label .required,
+.post-title a:hover,
+.post-meta a:hover,
+.author-bio .bio-name a:hover,
+.post-nav li a:hover span,
+.post-nav li a:hover i,
+.widget_rss ul li a,
+.widget_calendar a,
+.alx-tab .tab-item-category a,
+.alx-posts .post-item-category a,
+.alx-tab li:hover .tab-item-title a,
+.alx-tab li:hover .tab-item-comment a,
+.alx-posts li:hover .post-item-title a,
+#footer .widget_rss ul li a,
+#footer .widget_calendar a,
+#footer .alx-tab .tab-item-category a,
+#footer .alx-posts .post-item-category a,
+.comment-tabs li.active a,
+.comment-awaiting-moderation,
+.child-menu a:hover,
+.child-menu .current_page_item > a,
+.wp-pagenavi a { color: #e8554e; }
+.themeform input[type="submit"],
+.themeform button[type="submit"],
+.s1 .sidebar-toggle,
+.more-link,
+.post-tags a:hover,
+.author-bio .bio-avatar:after,
+.widget_calendar caption,
+.commentlist li.bypostauthor > .comment-body:after,
+.commentlist li.comment-author-admin > .comment-body:after { background-color: #e8554e; }
+.alx-tabs-nav li.active a,
+.wp-pagenavi a:hover,
+.wp-pagenavi a:active,
+.wp-pagenavi span.current { border-bottom-color: #e8554e!important; }
+.themeform input[type="text"]:focus, 
+.themeform input[type="password"]:focus, 
+.themeform input[type="email"]:focus, 
+.themeform textarea:focus,
+.comment-tabs li.active a { border-color: #e8554e; }                    
+#header, .boxed #header { background-color: #3e464c; }
+.site-title a img { max-height: 40px; }
+.site-description { line-height: 40px; }            
+body { background-color: #f9f9f9; }
+/* End Dynamic CSS */
+
+
+
+
+/* Tablet - 800px, 768px & 720px */
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+    .mystyle {}
+    #header .pad { padding-top: 45px; padding-bottom: 30px; } /* 使用 header.jpg 后新增的语句 */
+    .entry code { vertical-align: 0; padding: 0 3px; border-radius: 0; }
+}
+
+
+/* Mobile - 480px & 320px */
+@media only screen and (max-width: 719px) {
+    .mystyle {}
+    .site-title a img { max-height: none!important; }
+    #header .pad { padding-top: 10px; padding-bottom: 0; } /* 使用 header.jpg 后新增的语句 */
+    .entry code { vertical-align: 0; padding: 0 3px; border-radius: 0; }
+}
+
+
+/* Mobile - 320px */
+@media only screen and (max-width: 479px) {
+    .mystyle {}
+}

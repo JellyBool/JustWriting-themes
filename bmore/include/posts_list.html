@@ -1,0 +1,68 @@
+
+    <div id="page" class="container">
+        <div class="main group">
+            <section class="content">
+
+                <div class="pad group">
+  {% for post in posts %}              
+    <article id="post-823" class="post-823 post type-post status-publish format-standard hentry category-default tag-ssl group">
+
+                        <h2 class="post-title pad">
+                            <a href="{{ post.link }}" rel="bookmark"
+                               title="{{ post.title }}">{{ post.title }}</a>
+                        </h2><!--/.post-title-->
+
+                        <ul class="post-meta pad group">
+                        {% if post.tags %}
+                            {% for tag in post.tags %}
+                                <li><a href="/tags/{{ tag }}" rel="category tag">{{ tag }}</a></li>
+                            {% endfor %}
+                        {% endif %}
+                        
+                            <li><i class="fa fa-clock-o"></i>{{ post.date | date('Y-m-d') }}</li>
+                          
+                        </ul>
+                        <!--/.post-meta-->
+
+                        <div class="post-inner">
+
+
+                            <div class="post-deco">
+                                <div class="hex hex-small">
+                                    <div class="hex-inner"><i class="fa"></i></div>
+                                    <div class="corner-1"></div>
+                                    <div class="corner-2"></div>
+                                </div>
+                            </div>
+                            <!--/.post-deco-->
+
+                            <div class="post-content pad">
+
+                                <div class="entry">
+                                    {{ post.intro }}
+                                    <p><a href="{{post.link}}"
+                                          class="more-link">（更多&hellip;）</a></p>
+                                </div>
+                                <!--/.entry-->
+
+                                <a class="more-link-custom" href="{{post.link}}" rel="bookmark"
+                                   title="{{post.title}}"><span><i>更多</i></span></a>
+
+                            </div>
+                            <!--/.post-content-->
+
+                        </div>
+                        <!--/.post-inner-->
+
+                    </article>
+
+                    {% endfor %}
+                    {% include 'include/paginator.html' %}
+
+                        </div>
+                    </div>
+                    </div>
+
+            {% include 'include/footer.html' %}
+
+            </div>

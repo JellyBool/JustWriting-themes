@@ -1,0 +1,13 @@
+
+
+{% if paginator.has_previous or  paginator.has_next %}
+<nav class="pagination group">
+			<div class="wp-pagenavi">
+ {% if paginator.has_previous %}
+<a class="page larger" href="{{ paginator.previous_page_url }}">Pre</a>
+{% endif %}
+{% if paginator.has_next %}
+<a class="nextpostslink" rel="next" href="{{ paginator.next_page_url}}">Next</a>
+{% endif %}
+</div>	</nav>
+{% endif %}
