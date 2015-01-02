@@ -26,4 +26,12 @@ Change your blog `settings.php`
 
 ![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envr01sjtlj225c1eongi.jpg)
 
+### Bmore-Theme
 
+**Post-list:**
+
+![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envyd3fn83j225c1eokjl.jpg)
+
+**Post-details:**
+
+![](http://ww4.sinaimg.cn/mw690/a8bd3be0gw1envymsen18j225c1eoqv5.jpg)
