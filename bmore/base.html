@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hub.moe,me.hub.moe,blog,Hooli,MinonHeart"/>
     <meta name="description" content="Just a Blog."/>
 
     <title>{% block title %}{{ config.title }} {% endblock %}</title>
@@ -16,8 +17,16 @@
           media='all'/>
     <link rel='stylesheet' id='font-awesome-css' href='/templates/bmore/css/font-awesome.css'
           type='text/css' media='all'/>
+ <link rel='stylesheet'  href='/templates/bmore/css/github.css'
+          type='text/css' media='all'/>
+ <link rel="shortcut icon" href="/templates/bmore/images/logo.ico">
+
 <script type='text/javascript' src='/templates/bmore/js/jquery.js'></script>
-    <script type='text/javascript' src='/templates/bmore/js/jquery.flexslider.min.js'></script>
+<script type="text/javascript" src="/templates/bmore/js/quote/quote.js"></script>
+<script type='text/javascript' src='/templates/bmore/js/jquery.flexslider.min.js'></script>
+<script src="/templates/bmore/js/rainbow.min.js" type="text/javascript"></script> 
+<script src="/templates/bmore/js/generic.js" type="text/javascript"></script>
+<script src="/templates/bmore/js/php.js" type="text/javascript"></script>
 
     <!--[if lt IE 9]>
     <script src="/templates/bmore/css/js/ie/html5.js"></script>
@@ -44,6 +53,7 @@
                                 {% if config.intro %}
                                 <p class="site-description">{{ config.intro }}</p>
                                 {% endif %}
+                               
   
             </div>
         </div>

@@ -19,7 +19,7 @@
                         <ul class="post-meta pad group">
                         {% if post.tags %}
                             {% for tag in post.tags %}
-                                <li><a href="/tags/{{ tag }}" rel="category tag">{{ tag }}</a></li>
+                                <li><i class="fa fa-tags"></i><a href="/tags/{{ tag }}" rel="category tag">{{ tag }}</a></li>
                             {% endfor %}
                         {% endif %}
                         
@@ -30,7 +30,13 @@
 
                         <div class="post-inner">
                         
-
+{% if post.feature  %} 
+                        <div class="post-format">
+        <div class="image-container">
+        <a href="{{post.link}}">
+            <img width="800" height="376" src="{{post.feature}}" class="attachment-thumb-large wp-post-image" alt="{{post.title}}"> </a>      </div>
+    </div>
+     {% endif %} 
 
                             <div class="post-deco">
                                 <div class="hex hex-small">

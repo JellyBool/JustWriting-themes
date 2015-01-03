@@ -12,7 +12,7 @@ When you update your theme, backup this file and re-add it after.
 #header .social-links { display: none; }
 #footer-bottom #back-to-top:before { display: none; }
 #footer-bottom #back-to-top:after { display: none; }
-#footer-bottom #back-to-top { border-radius: 0 0 3px 3px; margin-top: -83px;}
+#footer-bottom #back-to-top { border-radius: 0 0 3px 3px; margin-top: -93px;}
 #footer-widgets .widget>h3 { text-transform: capitalize; font-family: "Microsoft Jhenghei"; }
 
 #header {
@@ -47,9 +47,9 @@ When you update your theme, backup this file and re-add it after.
     transition: transform 600ms;
 }
 .site-title a img:hover {
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    transform: rotate(30deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 .site-description {
     float: none;
@@ -65,7 +65,7 @@ When you update your theme, backup this file and re-add it after.
 hr, .hr { border-bottom: none; }
 #header .pad { padding-top: 65px; padding-bottom: 50px; } /* 使用 header.jpg 后新增的语句 */
 #footer .container { max-width: 960px; }
-#nav-footer .nav>li>a { font-size: 16px; font-family: "Microsoft Jhenghei"; }
+#nav-footer .nav>li>a { font-size: 16px; font-family: "Microsoft Jhenghei";font-style: italic; }
 .page-title { border-bottom: none; }
 .page .container{ max-width: 780px; }
 
@@ -176,8 +176,8 @@ hr, .hr { border-bottom: none; }
 body { font-family: "Lato", Arial, "微软雅黑", sans-serif; }
 .boxed #wrapper, .container { max-width: 860px; }
 
-::selection { background-color: #e8554e; }
-::-moz-selection { background-color: #e8554e; }
+
+
 
 a,
 .themeform label .required,
@@ -256,14 +256,14 @@ body { background-color: #f9f9f9; }
 #ds-reset .ds-gradient-bg, #ds-thread #ds-reset .ds-textarea-wrapper { background: none !important; } 
 #ds-reset .ds-like-thread-button, .ds-rounded{background: rgba(255,255,255,1) !important;  border: none !important;border-top: 2px solid rgba(0,39,59,.2) !important;border-bottom: 2px solid rgba(0,39,59,.2) !important; } 
 #ds-reset .ds-sync{ display: none !important; } /* 隐藏评论框底部分享 */ 
-#ds-thread #ds-reset .ds-post-button {height: 34px !important;background: #1abc9c !important; box-shadow: none !important; border: 1px solid #1abc9c !important; left: auto !important; /* 不必要的语句 */ color: #fff !important; font-weight: normal !important; outline: none; text-shadow:none !important;border-radius: 4px !important;width: 87px !important; } 
+#ds-thread #ds-reset .ds-post-button {height: 34px !important;background: #e8554e !important; box-shadow: none !important; border: 1px solid #e8554e !important; left: auto !important; /* 不必要的语句 */ color: #fff !important; font-weight: normal !important; outline: none; text-shadow:none !important;border-radius: 4px !important;width: 87px !important; } 
 #ds-thread #ds-reset .ds-post-button:hover { color: #fff !important; } 
 #ds-thread #ds-reset .ds-textarea-wrapper textarea { height: 54px !important; } 
 #ds-thread #ds-reset li.ds-tab a, #ds-thread #ds-reset #ds-bubble, #ds-reset .ds-avatar img{border-radius: 1px !important; -webkit-border-radius: 1px !important; } 
 #ds-thread #ds-reset li.ds-tab a:hover { background: #fff !important; } 
 #ds-thread #ds-reset li.ds-tab a.ds-current{background: #fff !important; border: none !important; } 
 #ds-thread #ds-reset .ds-post-self {padding-top: 15px !important; padding-bottom: 15px !important; } 
-#ds-reset .ds-avatar img {width: 52px !important; height: 52px !important;box-shadow: none !important; border: 1px solid #ddd !important; padding: 1px !important; border-radius: 50% !important; -webkit-border-radius: 50% !important;
+#ds-reset .ds-avatar img {width: 52px !important; height: 52px !important;box-shadow: none !important; border: 2px solid #fff !important; padding: 1px !important; border-radius: 50% !important; -webkit-border-radius: 50% !important;
     box-shadow: inset 0 -1px 0 #3333sf !important;;/*设置图像阴影效果*/
     -webkit-box-shadow: inset 0 -1px 0 #3333sf !important;;
     -webkit-transition: 0.6s !important;   
@@ -330,7 +330,12 @@ right: 11px !important;
 width: 20px !important;
 height: 16px !important;
 }
+#ds-reset .ds-avatar {
 
+background-color: #f9f9f9 !important;
+border-radius: 50% !important;
+
+}
 
 
 #ds-wrapper {
@@ -363,6 +368,229 @@ margin-left: 68px !important;
 #ds-thread #ds-reset .ds-replybox {
 margin-bottom: 20px !important;
 }
+blockquote.quote{
+    color:#e8554e;
+}
+blockquote small {
+display: block;
+text-align: right;
+}
+h5{
+margin: 10px 0;
+font-family: inherit;
+font-weight: bold;
+line-height: 20px;
+color: inherit;
+text-rendering: optimizelegibility;
+}
+.clearfix:before, .clearfix:after {
+display: table;
+content: "";
+line-height: 0;
+}
+.box, .entry-container {
+box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+.box {
+background: none repeat scroll 0 0 #FFFFFF;
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px;
+}
 
+.single-pagination .box{
+  width:100%;
+  height: 70px;
+  border-radius:2px;
+}
+.single-pagination a{
+  position: relative;
+  top: 0;
+  height: 70px;
+  width: 50%;
+}
+.single-pagination a.nav-previous{
+  border-right:1px solid rgba(0,0,0,0.15);
+}
+.single-pagination a.nav-previous, .single-pagination a.nav-previous > span, .single-pagination a.nav-previous > .bgimage, .single-pagination a.nav-previous > .tab_icon, .single-pagination a.nav-previous > .bgfallback{
+  left: 0;
+  z-index: 1;
+}
+.single-pagination a.nav-next, .single-pagination a.nav-next > span, .single-pagination a.nav-next > .bgimage, .single-pagination a.nav-next > .tab_icon, .single-pagination a.nav-next > .bgfallback{
+  right: 0;
+  z-index: 1;
+}
+.single-pagination a.nav-next > span, .single-pagination a.nav-next > .bgimage, .single-pagination a.nav-next > .tab_icon, .single-pagination a.nav-next > .bgfallback{
+  left:100%;
+}
+.single-pagination a > .bgfallback{
+    background-color:#ffffff;
+    position: absolute;
+    top: 50%;  
+    width: 88px;
+    height: 88px;
+    margin: -44px 0 0 -44px;
+    border-radius: 500px;
+}
+.single-pagination a > span{
+    width: 46px;
+    height: 46px;
+    display: block;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    border-radius: 23px;
+    cursor: pointer;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    background-size: 17px 25px;
+    margin: -23px 0 0 -23px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.single-pagination a:hover > span{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50px;
+    /*opacity: 0;*/
+    margin: -50px 0 0 -50px;
+    background-size: 22px 32px;
+    background-color:#7eb66f;
+}
+.single-pagination a > .bgimage{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;  
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.single-pagination a:hover > .bgimage{
+    width: 90px;
+    height: 90px;
+    background-size: 120% 120%;
+    margin: -45px 0 0 -45px;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+}
+.single-pagination a > .tab_icon{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: -45px 0 0 -45px;
+    border-radius: 500px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.single-pagination a:hover > .tab_icon{
+    width: 0px;
+    height: 0px;
+    margin: 0;
+}
+.single-pagination a > .tab_icon i{
+  width: 100%;
+  height: 100%;
+  padding-top:25px;
+  font-size:35px;
+}
+.single-pagination a:hover > .tab_icon i{
+  padding-bottom:20px;
+}
+.single-pagination a.nav-previous h5{
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    padding: 15px 15px 15px 60px;
+    position: absolute;
+    white-space: nowrap;
+    width: 95%;
+}
+.single-pagination a.nav-next h5{
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    padding: 15px 60px 15px 15px;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    
+}
+.single-pagenation a{
+    color: #7eb66f;
+}
+.single-pagination a:hover{
+    color: #7eb66f;
 
+}
+.tab_standard, .format-standard a.more-link, .format-standard a.more-link:hover {
+background-color: #c2c2c2;
+}
+.fa-calendar:before {
+color: #fff;
+}
+.container .left-col #header a {
+color: #EFEFEF;
+text-shadow: 0 1px #333;
+}
+justwriting-markdown-blogmedia="screen, projection"
+#sub-nav .social a.github {
+background: url('../images/social/github.png') center no-repeat #afb6ca;
+border: 1px solid #afb6ca;
+}
+
+#menu-item-758 .social-link a {
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+text-indent: -9999px;
+margin: 0 10px 10px 0;
+opacity: 0.5;
+width: 28px;
+height: 28px;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+}
+#menu-item-758 .social-link a.github{
+background: url('../images/social/github.png') center no-repeat #afb6ca;
+border: 1px solid #afb6ca;
+}
+#menu-item-758 .social-link a.weibo{
+background: url('https://assetcdn.500px.org/assets/v3/social/weibo-8e5dfa65c01ebac155773768c380f24b.svg') center no-repeat #afb6ca;
+border: 1px solid #afb6ca;
+-webkit-background-size: 28px 28px;
+background-size: 28px 28px;
+}
 

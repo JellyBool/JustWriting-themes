@@ -10,7 +10,7 @@
 	<div class="pad group">			
 	
 		
-		<article class="post-543 post type-post status-publish format-standard  has-post-thumbnail hentry category-default tag-php tag-23">
+		<article class="post-543 post type-post status-publish format-standard {% if post.feature  %} format-image has-post-thumbnail {% endif %} has-post-thumbnail hentry category-default tag-php tag-23">
 		
 			<h1 class="post-title pad">{{ post.title }}</h1>
 			
@@ -29,8 +29,8 @@
 
 			
 				<li><i class="fa fa-clock-o"></i>{{ post.date | date('Y-m-d') }}</li>
-				<li><a href="#comments"><i class="fa fa-comment"></i></a></li>			</ul>
-			
+				<!-- <li><a href="#comments"><i class="fa fa-comment"></i></a></li>			 -->
+			</ul>
 			<div class="post-inner">
 				
 				
@@ -81,6 +81,38 @@
 	
 
 	</div><!--/.pad-->
+<style type="text/css">
+
+</style>
+
+<!-- <div class="single-pagination clearfix">
+	<div class="box clearfix">
+ {% if prev_post %}
+<a href="{{prev_post.link}}" class="nav-previous" style="float:left;">
+<div class="bgfallback">&nbsp;</div>
+<span>&nbsp;</span>
+<div class="tab_icon tab_standard"><i class="fa fa-calendar"></i></div>
+<div class="bgimage" ></div>
+<h5><i class="icon-angle-double-left"></i> {{prev_post.title}}</h5>
+</a>
+ {% endif %}
+ {% if next_post %}
+<a href="{{next_post.link}}" class="nav-next" style="float:right;margin-top: -70px;">
+<div class="bgfallback">&nbsp;</div>
+<span>&nbsp;</span>
+<div class="tab_icon tab_standard"><i class="fa fa-calendar"></i></div>
+<div class="bgimage" ></div>
+<h5>{{next_post.title}}<i class="icon-angle-double-right"></i></h5>
+</a>
+{% endif %}
+</div>
+</div> -->
+
+ 
+
+
+<div class="entry"><blockquote class="quote"></blockquote></div>
+
 	 {% include 'include/comments.html' %}
 </section><!--/.content-->
 
