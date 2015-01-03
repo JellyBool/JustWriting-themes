@@ -1,7 +1,9 @@
 JustWriting-themes
 ==================
 
-Themes For Justwriting Blog Engine
+Themes For [Justwriting](https://github.com/hjue/JustWriting) Blog Engine
+
+
 
 ### Usage
 
