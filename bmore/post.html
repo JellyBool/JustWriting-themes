@@ -15,6 +15,7 @@
 			<h1 class="post-title pad">{{ post.title }}</h1>
 			
 			<ul class="post-meta pad group">
+			<li><i class="fa fa-tags"></i><a href="/tags" rel="category tag">标签:</a></li>
 			 {% if post.tags %}
                         
                             
@@ -57,7 +58,7 @@
 						{{ post.html|raw }}
 											</div><!--/.entry-->
 					
-					<p class="post-tags"><span>标签：</span> 
+					<p class="post-tags"><span><a href="/tags">标签:</a></span> 
 
 					    {% if post.tags %}
                         

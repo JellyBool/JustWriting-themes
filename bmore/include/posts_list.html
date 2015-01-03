@@ -17,6 +17,7 @@
                         </h2><!--/.post-title-->
 
                         <ul class="post-meta pad group">
+                         <li><i class="fa fa-tags"></i><a href="/tags" rel="category tag">标签:</a></li>
                         {% if post.tags %}
                             {% for tag in post.tags %}
                                 <li><i class="fa fa-tags"></i><a href="/tags/{{ tag }}" rel="category tag">{{ tag }}</a></li>

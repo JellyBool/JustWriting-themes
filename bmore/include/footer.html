@@ -11,7 +11,7 @@
                                 {% endif %}
 
 				<li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a title="{{ config.author }}" href="/">2014 -- 
-				{{ config.year }} {{ config.author }} All Rights Reserved</a></li>
+				{% if config.year %}{{ config.year }}{% endif %} {{ config.author }} All Rights Reserved</a></li>
 				{% if config.github %}
 							<li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
                                 <p class="social-link" style="margin-left: 10px;"> <a class="weibo" href="{{ config.weibo }}" target="_blank"></a></p></li>

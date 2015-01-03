@@ -3,28 +3,97 @@
 
 {% block content %}
 {%if  all_tags %}
+<link rel='stylesheet' id='style-css' href='/templates/bmore/css/jqcloud.css' type='text/css'
+          media='all'/>
+          <script type='text/javascript' src='/templates/bmore/js/jqcloud.js'></script>
 <div id="page" class="container">
 <div class="main group">
 <section class="content">
     
     <div class="pad group">         
     
-        
-        <article class="post-543 post type-post status-publish format-image has-post-thumbnail hentry category-default tag-php tag-23">
+   
+
+<article id="post-823" class="post-823 post type-post status-publish format-audio 
+    
+     format-image has-post-thumbnail 
+    hentry category-default tag-ssl group">
+
+                        <h2 class="post-title pad">
+ jQCloud 实现的标签云
+                        </h2><!--/.post-title-->
+
+                        <ul class="post-meta pad group">
+                         <li><i class="fa fa-tags"></i><a href="/tags" rel="category tag">标签:</a></li>
+            <li><i class="fa fa-tags"></i><a href="/tags/php " rel="category tag">php</a></li>
+        <li><i class="fa fa-tags"></i><a href="/tags/phpstorm" rel="category tag">phpStorm</a></li>
+                                                                            
+                            <li><i class="fa fa-clock-o"></i>{% if config.day %}{{ config.day }}{% endif %}</li>
+                          
+                        </ul>
+                        <!--/.post-meta-->
+
+                        <div class="post-inner">
+                        
+ 
+      
+
+                            
+                            <!--/.post-deco-->
+
+                            <div class="post-content pad">
+
+                                <div class="entry">
+                                  <div id="example" style="width: 100%; height: 350px;"></div>
+                                </div>
+                                <!--/.entry-->
+
+                         
+
+                            </div>
+                            <div class="post-deco">
+                                <div class="hex hex-small">
+                                    <div class="hex-inner"><i class="fa"></i></div>
+                                    <div class="corner-1"></div>
+                                    <div class="corner-2"></div>
+                                </div>
+                            </div>
 
 
+                        <div class="post-format">
+        <div class="image-container">
+        <a href="https://github.com/lucaong/jQCloud" target="_blank">
+            <img width="800" height="376" src="https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/209c5d72-f5bf-41a3-826c-f507d6e0da93.png" class="attachment-thumb-large wp-post-image" alt=" Jqcloud
+"> </a>      </div>
+    </div>
+                            <!--/.post-content-->
 
-        <h2 class="title">{{ lang('tags') }}：</h2>
-        <br>
-      {% for tag in all_tags %}
-        <div class="tag">
-		<a href="/tags/{{ tag }}">{{ tag }} </a>
-        </div>
-        {% endfor %}
-        </article>
+                        </div>
+                        <!--/.post-inner-->
+
+                    </article>
+
     </div>
     </section>
     </div>
+  <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+      {% for tag,weight in all_tags %}
+          {text: "{{ tag }}", weight: {{ weight }}, link: "/tags/{{ tag }}"},
+         
+         
+    {% endfor %}
+          // ...as many words as you want
+      ];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#example").jQCloud(word_array);
+      });
+    </script>
     {% include 'include/footer.html' %}
 </div>
 {% else %}

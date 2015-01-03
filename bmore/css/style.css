@@ -939,8 +939,8 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 /*  post format : audio
 /* ------------------------------------ */
 .format-audio .hex,
-.format-audio .post-deco { background: #69bac8; }
-.format-audio .hex .fa:before { content: "\f025"; }
+.format-audio .post-deco { background: #e8554e; }
+.format-audio .hex .fa:before { content:"\f02c" }
 
 .format-audio .post-format a,
 .format-audio .post-format i { font-size: 16px; line-height: 22px; }

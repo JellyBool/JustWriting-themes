@@ -5,10 +5,10 @@
 <nav class="pagination group">
 			<div class="wp-pagenavi">
  {% if paginator.has_previous %}
-<a class="page larger" href="{{ paginator.previous_page_url }}">{{ lang('prev') }}</a>
+<a class="page larger" href="{{ paginator.previous_page_url }}"><< {{ lang('prev') }} </a>
 {% endif %}
 {% if paginator.has_next %}
-<a class="nextpostslink" rel="next" href="{{ paginator.next_page_url}}">{{ lang('next') }}</a>
+<a class="nextpostslink" rel="next" href="{{ paginator.next_page_url}}">{{ lang('next') }} >></a>
 {% endif %}
 </div>	</nav>
 {% endif %}
