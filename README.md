@@ -34,7 +34,7 @@ Change your blog `settings.php`
 
 **Post-details:**
 
-![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/f8f29ea5-408a-4cf1-a211-7a248ffb015b.png))
+![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/f8f29ea5-408a-4cf1-a211-7a248ffb015b.png)
 
 ### Jelly-Theme
 
