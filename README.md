@@ -21,17 +21,12 @@ Change your blog `settings.php`
 
 >Example:`$blog_config['template'] = 'Jelly';` if you like `Jelly` theme
 
-### Jelly-Theme
-
->Clean  Focus  Responsive
-
-[Demo here](http://www.jellybool.com/)---My blog
-
-![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envr01sjtlj225c1eongi.jpg)
 
 ### Bmore-Theme
 
 >Clean  Beautiful  Responsive
+
+[Demo here](http://www.jellybool.com/)---My blog
 
 **Post-list:**
 
@@ -40,3 +35,11 @@ Change your blog `settings.php`
 **Post-details:**
 
 ![](http://ww4.sinaimg.cn/mw690/a8bd3be0gw1envymsen18j225c1eoqv5.jpg)
+
+### Jelly-Theme
+
+>Clean  Focus  Responsive
+
+
+
+![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envr01sjtlj225c1eongi.jpg)

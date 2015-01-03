@@ -5,7 +5,11 @@
 
                 <div class="pad group">
   {% for post in posts %}              
-    <article id="post-823" class="post-823 post type-post status-publish format-standard hentry category-default tag-ssl group">
+    <article id="post-823" class="post-823 post type-post status-publish format-standard 
+    
+    {% if post.feature  %} format-image has-post-thumbnail {% endif %}
+
+    hentry category-default tag-ssl group">
 
                         <h2 class="post-title pad">
                             <a href="{{ post.link }}" rel="bookmark"
@@ -25,7 +29,13 @@
                         <!--/.post-meta-->
 
                         <div class="post-inner">
-
+                        
+{% if post.feature  %} 
+                        <div class="post-format">
+        <div class="image-container">
+            <img width="800" height="376" src="{{post.feature}}" class="attachment-thumb-large wp-post-image" alt="{{post.title}}">       </div>
+    </div>
+     {% endif %} 
 
                             <div class="post-deco">
                                 <div class="hex hex-small">
@@ -39,7 +49,7 @@
                             <div class="post-content pad">
 
                                 <div class="entry">
-                                    {{ post.intro }}
+                                    {{ post.intro|raw }}
                                     <p><a href="{{post.link}}"
                                           class="more-link">（更多&hellip;）</a></p>
                                 </div>
