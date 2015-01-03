@@ -30,11 +30,11 @@ Change your blog `settings.php`
 
 **Post-list:**
 
-![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envyd3fn83j225c1eokjl.jpg)
+![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/5110eefb-6662-46d4-836c-c5ea6f881fbb.png)
 
 **Post-details:**
 
-![](http://ww4.sinaimg.cn/mw690/a8bd3be0gw1envymsen18j225c1eoqv5.jpg)
+![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/f8f29ea5-408a-4cf1-a211-7a248ffb015b.png))
 
 ### Jelly-Theme
 
@@ -42,4 +42,4 @@ Change your blog `settings.php`
 
 
 
-![](http://ww1.sinaimg.cn/mw690/a8bd3be0gw1envr01sjtlj225c1eongi.jpg)
+![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/b6100bc1-0bee-4cb4-9977-550f58b50f73.png)
