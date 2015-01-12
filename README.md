@@ -46,4 +46,4 @@ Change your blog `settings.php`
 
 ![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/b6100bc1-0bee-4cb4-9977-550f58b50f73.png)
 
-[Buy me a cup of Coffee](http://www.jellybool.com/post/coffee)
+[Buy me a cup of Coffee if you like](http://www.jellybool.com/post/coffee)
