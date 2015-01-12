@@ -30,7 +30,7 @@ Change your blog `settings.php`
 
 [Demo here](http://www.jellybool.com/)---My blog
 
-**Post-list:**
+**Post-lists:**
 
 ![](https://wt-prj.oss.aliyuncs.com/766e22da1e8c467a8af35d90c9185409/5110eefb-6662-46d4-836c-c5ea6f881fbb.png)
 
